@@ -1,0 +1,45 @@
+.container {
+    border: #777;
+    border-width: 0px;
+    border-style: dashed;
+    border-color: #00000055;
+    padding: 10px;
+    width: 20%;
+    height: 100px;
+    font-family: 'Arial';
+    font-size: 16px;
+    font-style: normal;
+}
+
+.coins {
+    border: #777;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #00000055;
+    padding: 10px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: auto;
+    width: 10%;
+    display: block;
+    position: static;
+    font-family: 'Touga';
+    font-size: 16px;
+    font-style: normal;
+}
+
+.form-section {
+    border: #777;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #00000055;
+    padding: 15px;
+    margin: 30px auto;
+    width: 40%;
+    background-color: #f9f9f9;
+    font-family: 'Arial';
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}

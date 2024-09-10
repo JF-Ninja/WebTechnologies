@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+    <link rel="icon" href="8871ece0765b11eebac46a0259d7362a_upscaled.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Coin page</h1>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>About this Page</h2>
+            <p>This page is about crypto</p>
+        </div>
+
+        <div class="coins">
+            <h3>Top 3 coins</h3>
+            <ul>
+              <li>Bitcoin</li>
+              <li>Ethereum</li>
+              <li>USDT</li>
+            </ul>
+        </div>
+
+        <img src="images.jpg" alt="A simple image">
+
+        <h3>Most popular coins</h3>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <tbody>
+                <tr>
+                    <td>Bitcoin</td>
+                    <td>Ethereum</td>
+                    <td>Tether</td>
+                    <td>BNB</td>
+                </tr>
+                <tr>
+                    <td>Dogecoin</td>
+                    <td>Tron</td>
+                    <td>Solana</td>
+                    <td>USDC</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="form-section">
+            <h3>Which coin do you prefer?</h3>
+            <form action="SecondPage.html">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="message">Message (Name of your coin):</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+         <h3>Useful Link</h3>
+        <a href="https://www.binance.com/" target="_blank">Binance</a>
+    </section>
+</body>
+</html>

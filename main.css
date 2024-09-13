@@ -1,45 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+.container, .coins, .form-section {
+    margin: 20px;
+}
+
 .container {
-    border: #777;
-    border-width: 0px;
-    border-style: dashed;
-    border-color: #00000055;
     padding: 10px;
-    width: 20%;
-    height: 100px;
-    font-family: 'Arial';
-    font-size: 16px;
-    font-style: normal;
+    width: 100%;
+    border: 1px solid #00000055;
 }
 
 .coins {
-    border: #777;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #00000055;
     padding: 10px;
-    margin-left: 100px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    height: auto;
-    width: 10%;
+    border: 1px solid #00000055;
+    width: 20%;
+}
+
+.image-overlay {
+    position: relative;
+    width: 50%;
+    margin: 20px 0;
+}
+
+.hover-img {
     display: block;
-    position: static;
-    font-family: 'Touga';
-    font-size: 16px;
-    font-style: normal;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-overlay:hover .overlay {
+    opacity: 1;
+}
+
+.text-overlay {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .form-section {
-    border: #777;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #00000055;
     padding: 15px;
-    margin: 30px auto;
-    width: 40%;
+    border: 1px solid #00000055;
     background-color: #f9f9f9;
-    font-family: 'Arial';
-    font-size: 16px;
-    font-weight: bold;
-    font-style: italic;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.styled-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 2px solid #333;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="checkbox"]:checked + .styled-checkbox {
+    background-color: green;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: green;
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    text-align: center;
 }

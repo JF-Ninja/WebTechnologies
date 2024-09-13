@@ -4,32 +4,36 @@
     <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>Styled HTML Page</title>
     <link rel="icon" href="8871ece0765b11eebac46a0259d7362a_upscaled.jpg" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>Coin page</h1>
+        <h1>Coin Page</h1>
     </header>
 
     <section>
         <div class="container">
-            <h2>About this Page</h2>
-            <p>This page is about crypto</p>
+            <p>This page is about crypto.</p>
         </div>
 
         <div class="coins">
-            <h3>Top 3 coins</h3>
+            <h3>Top 3 Coins</h3>
             <ul>
-              <li>Bitcoin</li>
-              <li>Ethereum</li>
-              <li>USDT</li>
+                <li>Bitcoin</li>
+                <li>Ethereum</li>
+                <li>USDT</li>
             </ul>
         </div>
 
-        <img src="images.jpg" alt="A simple image">
+        <div class="image-overlay">
+            <img src="images.jpg" alt="A simple image" class="hover-img">
+            <div class="overlay">
+                <div class="text-overlay">Crypto Image</div>
+            </div>
+        </div>
 
-        <h3>Most popular coins</h3>
+        <h3>Most Popular Coins</h3>
         <table border="1" cellspacing="0" cellpadding="10">
             <tbody>
                 <tr>
@@ -48,7 +52,7 @@
         </table>
 
         <div class="form-section">
-            <h3>Which coin do you prefer?</h3>
+            <h3>Which Coin Do You Prefer?</h3>
             <form action="SecondPage.html">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
@@ -59,12 +63,21 @@
                 <label for="message">Message (Name of your coin):</label><br>
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
 
+                <label>
+                    <input type="checkbox" id="agree"> I agree with the terms.
+                </label><br><br>
+
                 <button type="submit">Send</button>
             </form>
         </div>
 
-         <h3>Useful Link</h3>
-        <a href="https://www.binance.com/" target="_blank">Binance</a>
+        <h3>Useful Links</h3>
+        <nav>
+            <ul>
+                <li><a href="https://www.binance.com/" target="_blank">Binance</a></li>
+                
+            </ul>
+        </nav>
     </section>
 </body>
 </html>
